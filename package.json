@@ -1,0 +1,14 @@
+{
+  "name": "js-practice",
+  "version": "1.0.0",
+  "description": "JavaScript practice environment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": ["javascript", "practice"],
+  "author": "",
+  "license": "ISC"
+}
