@@ -8,7 +8,13 @@
     "start": "node index.js",
     "test": "node test.js"
   },
-  "keywords": ["javascript", "practice"],
+  "keywords": [
+    "javascript",
+    "practice"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.39.1"
+  }
 }
