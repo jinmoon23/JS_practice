@@ -1,3 +1,3 @@
 const arr = [1, 2, 3];
-arr.push(['a','b','c']);
+arr.push('a');
 console.log(arr);
