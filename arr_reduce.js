@@ -29,6 +29,6 @@ const flatted = nested.reduce((acc, curr) => acc.concat(curr), []);
 console.log(flatted);
 
 // 객체 배열 합산
-const items = [{price: 10}, {price: 20}, {price: 30}];
+const items = [{ price: 10 }, { price: 20 }, { price: 30 }];
 const totalPrice = items.reduce((acc, item) => acc + item.price, 0);
 console.log(totalPrice);
