@@ -13,7 +13,7 @@ function solution(N, K) {
   // 2. 큐에 하나만 남을때까지 동작하는 루프 생성
   while (queue.length != 1) {
     // 3. 항상 시작점이 기준점이 되도록 i = 1 설정
-    // 제거되상이 되는 K 이전의 번호는 shift 후 push하여 제거하지 않고 건너뛰기 구현
+    // 제거 대상이 되는 K 이전의 번호는 shift 후 push하여 제거하지 않고 건너뛰기 구현
     // for문 동작 이후 queue의 front는 제거되어야 하는 K번째 번호가 됨
     for (let i = 1; i < K; i++) {
       queue.push(queue.shift());
