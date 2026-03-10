@@ -41,4 +41,3 @@ function solutions(k, operations) {
 
 console.log(solutions(3,[['u',0,1], ['u',1,2],['f',2]]));
 console.log(solutions(4,[['u',0,1], ['u',2,3],['f',0]]));
-
