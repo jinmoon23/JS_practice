@@ -1,7 +1,7 @@
 // 특정 노드 x의 루트 노드를 찾아 반환
 function find(parents, x) {
   // 자기 자신이 루트 노드인 경우 루트 노드를 찾았으니 자기 자신을 반환
-  if (parents[x] === x) return x;
+  if (x === parents[x]) return x;
   // 자기 자신이 루트 노드가 아닌 경우 경로 압축
   // parents[x]는 x의 부모 노드
   // 즉, 부모 노드를 find 함수에 넣고 재귀적으로 루트 노드 탐색
