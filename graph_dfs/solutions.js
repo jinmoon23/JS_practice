@@ -6,7 +6,7 @@ function solutions(graph, start) {
   }
   console.log(connections);
 
-  function dfs(node, visited, result) {
+  function dfs(node) {
     visited.add(node);
     result.push(node);
     // 핵심 -> 리프 노드의 경우 인접 노드가 없으므로 connections[node]에서 undefined를 반환하여 에러가 발생한다.

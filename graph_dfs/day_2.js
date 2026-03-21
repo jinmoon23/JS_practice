@@ -7,9 +7,10 @@ function solutions(graph, start) {
   }
 
   function dfs(node, visited, result) {
-    visited.add(node); result.push(node);
+    visited.add(node); 
+    result.push(node);
 
-    const neighbors = connections[node] || [];
+    const neighbors = connections[node] ?? [];
     
     for (const neighbor of neighbors) {
       if (!visited.has(neighbor)) {
