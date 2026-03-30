@@ -24,7 +24,7 @@ class MinHeap {
     
     while(index > 0) {
       const parentIndex = Math.floor((index - 1) / 2);
-      if (this.items[parentIndex] <= this.items[index]) break;
+      if (this.items[parentIndex][1] <= this.items[index][1]) break;
       this.swap(parentIndex, index);
       index = parentIndex;
     }
@@ -36,10 +36,10 @@ class MinHeap {
     while(index * 2 + 1 < this.size()) {
       const leftChild = index * 2 + 1, rightChild = index * 2 + 2;
       let smallerChild = leftChild;
-      if (rightChild < this.size() && this.items[rightChild] < this.items[leftChild]) {
+      if (rightChild < this.size() && this.items[rightChild][1] < this.items[leftChild][1]) {
         smallerChild = rightChild;
       }
-      if (this.items[smallerChild] <= this.items[index]) break;
+      if (this.items[index][1] <= this.items[smallerChild][1]) break;
       this.swap(smallerChild, index);
       index = smallerChild;
     }
